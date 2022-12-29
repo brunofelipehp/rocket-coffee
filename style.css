@@ -16,16 +16,20 @@
 }
 
 body {
-  background: var(--backgrond) url('./assets/blur-mobile.png') no-repeat center
-    bottom;
-  height: 100vh;
+  background: var(--backgrond);
+  max-height: 100vh;
   color: var(--text-color);
 }
 
-section#logo-menu {
+#header-menu {
+  border-bottom: 1px solid var(--border);
+  padding-top: 2.3125rem;
+  padding-bottom: 1.6075rem;
+}
+
+div#logo-menu {
   display: flex;
   justify-content: space-between;
-  margin-top: 2.3125rem;
   margin-left: 1.625rem;
   margin-right: 1.5625rem;
 }
@@ -34,7 +38,7 @@ section#logo-menu {
   width: 23.3125rem;
   height: 8rem;
 
-  margin-top: 7.13875rem;
+  margin-top: 5.53125rem;
   margin-bottom: 5.5rem;
   margin-left: 1.75rem;
   margin-right: 1.6875rem;
@@ -107,8 +111,42 @@ main {
 }
 
 #photo-coffee img {
-  width: 16.6675rem;
-  height: 16.984375rem;
-  position: relative;
+  width: 18.51625rem;
+  height: 20.8125rem;
+}
+
+#menu-mobile.close {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+#menu-mobile {
+  background: var(--backgrond);
+  height: 115%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+/*
+*/
+#blur {
+  position: fixed;
   bottom: 0px;
+}
+
+#menu-list li {
+  padding-bottom: 0.875rem;
+  padding-top: 1.125rem;
+  border: 1px solid var(--border);
+}
+
+#menu-list li a {
+  width: 100%;
+  text-decoration: none;
+  color: var(--text-color-menu-mobile);
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-left: 1.92625rem;
 }

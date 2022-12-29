@@ -15,23 +15,36 @@
 
   <body>
     <header>
-      <section id="logo-menu">
-        <div><img src="./assets/logo-mobile.svg" alt="logo" /></div>
-        <div>
-          <i><img src="./assets/menu-buguer-open.svg" alt="menu" /></i>
-        </div>
-      </section>
+      <nav>
+        <section id="header-menu">
+          <div id="logo-menu">
+            <div><img src="./assets/logo-mobile.svg" alt="logo" /></div>
+            <div id="toggle">
+              <i><img src="./assets/menu-buguer-open.svg" alt="menu" /></i>
+            </div>
+          </div>
+        </section>
+        <section id="menu-mobile" class="close">
+          <ul id="menu-list">
+            <li><a href="">Home</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Recompensa</a></li>
+            <li><a href="">Gift Card</a></li>
+            <li><a href="">Lojas</a></li>
+          </ul>
+        </section>
 
-      <section id="body-header">
-        <h1 class="titulo-header">
-          O café que fará seu código decolar para
-          <br />
-          o próximo nível.
-        </h1>
-        <div class="button-header">
-          <button>PEGAR MEU CAFE ></button>
-        </div>
-      </section>
+        <section id="body-header">
+          <h1 class="titulo-header">
+            O café que fará seu código decolar para
+            <br />
+            o próximo nível.
+          </h1>
+          <div class="button-header">
+            <button>PEGAR MEU CAFE ></button>
+          </div>
+        </section>
+      </nav>
     </header>
 
     <main>
@@ -42,6 +55,7 @@
       <section id="photo-coffee">
         <img src="./assets/rocket-coffee.png" alt="imagem rocket coffee" />
       </section>
+      <img id="blur" src="./assets/blur-mobile.png" alt="fundo" />
     </main>
   </body>
 </html>
