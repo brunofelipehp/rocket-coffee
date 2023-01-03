@@ -1,8 +1,9 @@
 const toggle = document.querySelector('#toggle')
 const toggleImg = document.querySelector('#toggle img')
 const menu = document.querySelector('#menu-mobile')
-const menuList = document.querySelectorAll('#menu-list a')
-const select = document.querySelectorAll('#menu-list li')
+const menuList = document.querySelector('#menu-list')
+const select = document.querySelectorAll('#menu-list li a')
+const currentLocation = location.href
 
 toggle.addEventListener('click', function () {
   menu.classList.toggle('close')
@@ -17,7 +18,17 @@ toggle.addEventListener('click', function () {
   }
 })
 
+const menuLength = select.length
+for (let i = 0; i < menuLength; i++) {
+  if (select[i].href === currentLocation) {
+    select.className = 'selected'
+  }
+}
+/*
 menuList.addEventListener('click', function () {
-  select.classList.toggle('selected')
-  console.log('ola')
+  select.forEach((element) => {
+    element.classList.toggle('selected')
+    // alert(`ola ${element.textContent}`)
+  })
 })
+*/

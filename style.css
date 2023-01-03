@@ -143,8 +143,14 @@ main {
   border: 1px solid var(--border);
 }
 
-#menu-list li.selected {
-  border-left: 5px solid #8257e5;
+#menu-list li:active {
+  border-left: 5px solid var(--button);
+  transition: all 0.4s ease-in-out;
+}
+
+#menu-list li:hover {
+  border-left: 5px solid var(--button);
+  transition: all 0.4s ease-in-out;
 }
 
 #menu-list li a {
@@ -167,6 +173,7 @@ main {
 
 #menu-list li a:hover {
   color: var(--text-color-menu-mobile);
+  transition: all 0.5s ease-in-out;
 }
 
 #toggle img.close {
