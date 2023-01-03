@@ -18,12 +18,6 @@ toggle.addEventListener('click', function () {
   }
 })
 
-const menuLength = select.length
-for (let i = 0; i < menuLength; i++) {
-  if (select[i].href === currentLocation) {
-    select.className = 'selected'
-  }
-}
 /*
 menuList.addEventListener('click', function () {
   select.forEach((element) => {
