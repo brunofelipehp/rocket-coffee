@@ -17,12 +17,3 @@ toggle.addEventListener('click', function () {
     toggleImg.classList.add('close')
   }
 })
-
-/*
-menuList.addEventListener('click', function () {
-  select.forEach((element) => {
-    element.classList.toggle('selected')
-    // alert(`ola ${element.textContent}`)
-  })
-})
-*/
