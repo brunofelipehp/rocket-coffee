@@ -50,6 +50,11 @@ body {
     color: var(--text-color);
   }
 
+  #menu-list li a:hover {
+    color: var(--border-menu-mobile);
+    transition: all 0.3s ease-in-out;
+  }
+
   #body-header {
     margin-left: 8.165625rem;
   }
@@ -113,27 +118,7 @@ body {
     position: relative;
   }
 
-  #logo-mobile {
-    width: 0;
-    height: 0;
-    display: none;
-    visibility: hidden;
-  }
-
-  #toggle {
-    width: 0;
-    height: 0;
-    display: none;
-    visibility: hidden;
-  }
-
-  .titulo-header {
-    width: 0;
-    height: 0;
-    display: none;
-    visibility: hidden;
-  }
-
+  /* **** BLUR  ***** */
   #blur1 {
     position: absolute;
     bottom: 0px;
@@ -146,11 +131,22 @@ body {
     right: 0px;
   }
 
-  #blur-mobile {
-    width: 0;
-    height: 0;
+  /* **** hidden element  ***** */
+
+  #logo-mobile {
     display: none;
-    visibility: hidden;
+  }
+
+  #toggle {
+    display: none;
+  }
+
+  .titulo-header {
+    display: none;
+  }
+
+  #blur-mobile {
+    display: none;
   }
 }
 
@@ -205,14 +201,6 @@ body {
   }
 
   /* =============== MENU MOBILE ================= */
-
-  #menu-mobile.close {
-    opacity: 0;
-    display: none;
-    visibility: hidden;
-    height: 0;
-    width: 0;
-  }
 
   #menu-mobile {
     background: var(--backgrond);
@@ -310,24 +298,20 @@ body {
     bottom: 0px;
   }
 
-  #blur1 {
-    width: 0;
-    height: 0;
+  /* **** hidden element  ***** */
+  #menu-mobile.close {
     display: none;
-    visibility: hidden;
+  }
+
+  #blur1 {
+    display: none;
   }
 
   #blur2 {
-    width: 0;
-    height: 0;
     display: none;
-    visibility: hidden;
   }
 
   #logo-desk {
-    width: 0;
-    height: 0;
     display: none;
-    visibility: hidden;
   }
 }
