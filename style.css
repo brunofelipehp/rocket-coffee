@@ -17,125 +17,144 @@
 
 body {
   background: var(--backgrond);
-  max-height: 100vh;
   color: var(--text-color);
 }
 
-/* =============== MENU ================= */
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media (min-width: 750px) {
+  /* =============== MENU ================= */
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  margin-top: 3.125rem;
-  margin-left: 17.5rem;
-  margin-right: 10.125rem;
+    margin-top: 3.125rem;
+    margin-left: 17.5rem;
+    margin-right: 10.125rem;
+  }
+
+  #logo-menu {
+    margin-right: 8.80875rem;
+  }
+
+  #menu-list {
+    display: flex;
+    gap: 2.026875rem;
+  }
+
+  #menu-list li {
+    list-style: none;
+  }
+
+  #menu-list li a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  #body-header {
+    margin-left: 8.165625rem;
+  }
+
+  .button-header button {
+    width: 10.75rem;
+    height: 2.3125rem;
+    border: none 1px solid;
+    border-radius: 0.375rem;
+    border-color: var(--button);
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 0.6875rem;
+  }
+
+  /* =============== MAIN ================= */
+
+  /* **** TITLE MAIN ***** */
+  #title-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+  }
+
+  #title-main h2 {
+    width: 29.4375rem;
+    height: 6.8125rem;
+    font-weight: 700;
+    font-size: 5rem;
+    letter-spacing: -0.03em;
+  }
+
+  #title-main h3 {
+    width: 34.25rem;
+    height: 6.81256rem;
+    font-weight: 700;
+    font-size: 5rem;
+    font-style: normal;
+    letter-spacing: -0.03em;
+    color: var(--backgrond);
+
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button),
+      -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+  }
+
+  /* **** PHOTO ROCKET COFFEE ***** */
+  #photo-coffee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #photo-coffee img {
+    width: 49.92375rem;
+    height: 31.654375rem;
+  }
+
+  main {
+    position: relative;
+  }
+
+  #logo-mobile {
+    width: 0;
+    height: 0;
+    display: none;
+    visibility: hidden;
+  }
+
+  #toggle {
+    width: 0;
+    height: 0;
+    display: none;
+    visibility: hidden;
+  }
+
+  .titulo-header {
+    width: 0;
+    height: 0;
+    display: none;
+    visibility: hidden;
+  }
+
+  #blur1 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  #blur2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  #blur-mobile {
+    width: 0;
+    height: 0;
+    display: none;
+    visibility: hidden;
+  }
 }
 
-#logo-menu {
-  margin-right: 8.80875rem;
-}
-
-#menu-list {
-  display: flex;
-  gap: 2.026875rem;
-}
-
-#menu-list li {
-  list-style: none;
-}
-
-#menu-list li a {
-  text-decoration: none;
-  color: var(--text-color);
-}
-
-#body-header {
-  margin-left: 8.165625rem;
-}
-
-.button-header button {
-  width: 10.75rem;
-  height: 2.3125rem;
-  border: none 1px solid;
-  border-radius: 0.375rem;
-  border-color: var(--button);
-  background-color: transparent;
-  color: var(--text-color);
-  font-size: 0.6875rem;
-}
-
-/* =============== MAIN ================= */
-
-/* **** TITLE MAIN ***** */
-#title-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.375rem;
-
-  margin-top: 2.5rem;
-}
-
-#title-main h2 {
-  width: 29.4375rem;
-  height: 6.8125rem;
-  font-weight: 700;
-  font-size: 5rem;
-  letter-spacing: -0.03em;
-}
-
-#title-main h3 {
-  width: 34.25rem;
-  height: 6.81256rem;
-  font-weight: 700;
-  font-size: 5rem;
-  font-style: normal;
-  letter-spacing: -0.03em;
-  color: var(--backgrond);
-
-  text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button),
-    -1px 1px 0 var(--button), 1px 1px 0 var(--button);
-}
-
-/* **** PHOTO ROCKET COFFEE ***** */
-#photo-coffee {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#photo-coffee img {
-  width: 49.92375rem;
-  height: 31.654375rem;
-}
-
-#logo-mobile {
-  width: 0;
-  height: 0;
-  visibility: hidden;
-}
-
-#toggle {
-  width: 0;
-  height: 0;
-  visibility: hidden;
-}
-
-.titulo-header {
-  width: 0;
-  height: 0;
-  visibility: hidden;
-}
-
-#blur {
-  width: 0;
-  height: 0;
-  visibility: hidden;
-}
-
-@media (max-width: 450px) {
+@media (max-width: 750px) {
   /* =============== HEADER ================= */
   #header-menu {
     border-bottom: 1px solid var(--border);
@@ -189,6 +208,7 @@ nav {
 
   #menu-mobile.close {
     opacity: 0;
+    display: none;
     visibility: hidden;
     height: 0;
     width: 0;
@@ -196,10 +216,11 @@ nav {
 
   #menu-mobile {
     background: var(--backgrond);
-    height: 115%;
+    height: 100%;
     width: 100%;
     position: absolute;
     z-index: 2;
+    overflow: hidden;
   }
 
   /* **** ITENS MENU  ***** */
@@ -284,8 +305,29 @@ nav {
   }
 
   /* **** BLUR  ***** */
-  #blur {
+  #blur-mobile {
     position: fixed;
     bottom: 0px;
+  }
+
+  #blur1 {
+    width: 0;
+    height: 0;
+    display: none;
+    visibility: hidden;
+  }
+
+  #blur2 {
+    width: 0;
+    height: 0;
+    display: none;
+    visibility: hidden;
+  }
+
+  #logo-desk {
+    width: 0;
+    height: 0;
+    display: none;
+    visibility: hidden;
   }
 }
