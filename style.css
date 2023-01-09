@@ -20,7 +20,7 @@ body {
   color: var(--text-color);
 }
 
-@media (min-width: 750px) {
+@media screen and (min-width: 1008px) {
   /* =============== MENU ================= */
   nav {
     display: flex;
@@ -150,7 +150,7 @@ body {
   }
 }
 
-@media (max-width: 750px) {
+@media screen and (max-width: 1007px) {
   /* =============== HEADER ================= */
   #header-menu {
     border-bottom: 1px solid var(--border);
@@ -312,6 +312,25 @@ body {
   }
 
   #logo-desk {
+    display: none;
+  }
+}
+
+/* =============== RESPONSIVE DESIGN  ================= */
+
+@media screen and (min-width: 600px) {
+  #blur-mobile {
+    display: none;
+  }
+
+  #photo-coffee img {
+    width: 47.92375rem;
+    height: 31.654375rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  #blur-mobile {
     display: none;
   }
 }
