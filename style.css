@@ -70,6 +70,10 @@ body {
     font-size: 0.6875rem;
   }
 
+  .button-header button img {
+    display: none;
+  }
+
   /* =============== MAIN ================= */
 
   /* **** TITLE MAIN ***** */
@@ -190,6 +194,11 @@ body {
   }
 
   .button-header button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+
     width: 10.8825rem;
     height: 2.1875rem;
     border: none 1px solid;
