@@ -3,7 +3,7 @@ const toggleImg = document.querySelector('#toggle img')
 const menu = document.querySelector('#menu-mobile')
 const main = document.querySelector('main')
 
-toggle.addEventListener('click', function () {
+function handleMenu(){
   menu.classList.toggle('close')
 
   if (!menu.classList.item('close')) {
@@ -13,4 +13,6 @@ toggle.addEventListener('click', function () {
     toggleImg.src = './assets/menu-buguer-open.svg'
     main.style.display = 'block'
   }
-})
+}
+
+toggle.addEventListener('click', handleMenu)
